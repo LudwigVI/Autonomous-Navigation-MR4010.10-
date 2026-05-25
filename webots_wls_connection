@@ -1,0 +1,5 @@
+#!/bin/bash
+export WEBOTS_HOME="/home/ludwigvi/webots"
+export PYTHONPATH="/home/ludwigvi/webots/lib/controller/python"
+export WEBOTS_CONTROLLER_URL="tcp://$(ip route | grep default | awk '{print $3}'):1234"
+echo "Webots variables configured for WSL. Ready to connect!"
